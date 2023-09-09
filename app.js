@@ -2,10 +2,11 @@
 const express = require('express')
 const cors = require('cors');
 const morgan = require('morgan');
+require('dotenv').config();
 
 const app = express()
 
-const port = 300;
+const port = process.env.PORT || 300;
 
 //MiddleWares
 app.use(cors())
